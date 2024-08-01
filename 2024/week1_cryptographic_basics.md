@@ -118,6 +118,26 @@ Use this as the input:
 
 Save the full answer to be submitted at the end of this module!
 
+```circom
+template Hash(){
+    signal input preimage;
+    signal input hash;
+    signal output hashOutput;
+
+    component hasher = Poseidon(1);
+
+    hasher.inputs[0] <== preimage;
+    hashOutput <== hasher.out;
+}
+
+component main = Hash();
+
+/* INPUT = {
+    "preimage": "12345",
+    "hash": "4267533774488295900887461483015112262021273608761099826938271132511348470966"
+} */
+```
+
 ### Write a circuit to add two numbers on an elliptic curve
 
 We don't dive in the details of elliptic curves in this module, but we can still write a simple circuit to add two numbers on an elliptic curve by importing the `babyjub.circom` file and add the points together.

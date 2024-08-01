@@ -19,15 +19,36 @@ This is one of the simplest examples of a ZK circuit. This circuit checks that t
 ```circom
 pragma circom 2.1.6;
 
-template Addition() {
+template AdditionProof() {
     // declaration of signals
-    signal input in1;
-    signal input in2;
-    signal output out;
+    signal input a;
+    signal input b;
+    signal output sum;
 
     // constraint
-    out <== in1 + in2;
+    sum <== a + b;
 }
+
+component main = AdditionProof();
+
+/* INPUT = {
+    "a": 3,
+    "b": 5
+} */
+```
+
+Note that the `a` and `b` are the private inputs.
+
+### Write a circuit to prove multiplication
+
+From there, let's try to write a circuit to prove the multiplication of two numbers!
+
+Once that works, try to make a circuit to prove the multiplication of three numbers.
+
+Make sure to save these circuits and present them at the end of the week.
+
+```circom
+pragma circom 2.1.6;
 
 template Multiplication2() {
     // declaration of signals
@@ -67,15 +88,6 @@ component main = Multiplication3();
 } */
 ```
 
-Note that the `a` and `b` are the private inputs.
-
-### Write a circuit to prove multiplication
-
-From there, let's try to write a circuit to prove the multiplication of two numbers!
-
-Once that works, try to make a circuit to prove the multiplication of three numbers.
-
-Make sure to save these circuits and present them at the end of the week.
 
 ### Write a circuit to prove input to hash
 

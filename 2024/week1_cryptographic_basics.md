@@ -29,6 +29,16 @@ template AdditionProof() {
     sum <== a + b;
 }
 
+template Addition() {
+    // declaration of signals
+    signal input in1;
+    signal input in2;
+    signal output out;
+
+    // constraint
+    out <== in1 + in2;
+}
+
 component main = AdditionProof();
 
 /* INPUT = {

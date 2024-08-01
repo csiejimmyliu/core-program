@@ -19,16 +19,6 @@ This is one of the simplest examples of a ZK circuit. This circuit checks that t
 ```circom
 pragma circom 2.1.6;
 
-template AdditionProof() {
-    // declaration of signals
-    signal input a;
-    signal input b;
-    signal output sum;
-
-    // constraint
-    sum <== a + b;
-}
-
 template Addition() {
     // declaration of signals
     signal input in1;
@@ -39,11 +29,41 @@ template Addition() {
     out <== in1 + in2;
 }
 
-component main = AdditionProof();
+template Multiplication2() {
+    // declaration of signals
+    signal input in1;
+    signal input in2;
+    signal output out;
+
+    // constraint
+    out <== in1 * in2;
+}
+
+template Multiplication3() {
+    // declaration of signals
+    signal input in1;
+    signal input in2;
+    signal input in3;
+
+    component mult1 = Multiplication2();
+    component mult2 = Multiplication2();
+
+    signal output out;
+
+    // constraint
+    mult1.in1 <== in1;
+    mult1.in2 <== in2;
+    mult2.in1 <== mult1.out;
+    mult2.in2 <== in3;
+    out <== mult2.out;
+}
+
+component main = Multiplication3();
 
 /* INPUT = {
-    "a": 3,
-    "b": 5
+    "in1": 3,
+    "in2": 5,
+    "in3": 4
 } */
 ```
 

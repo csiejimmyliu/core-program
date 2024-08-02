@@ -294,6 +294,12 @@ Explore these resources to further your understanding:
 3. What is the Poseidon hash function and why is it particularly useful in ZKPs?
 :::
 
+**Ans:**
+1. Hash is a one-way function, mapping arbitrary-length messages into a fixed-length digest which is useful in authucation.
+2. Turn msg into binary then use msg as a round key to modify fixed-length initial bits.
+3. Poseidon is a hash function on a finite field with sponge structure, which is flexible in the trade-off between throughput and security by manipulating rate and capacity.
+The circuits needed in Poseidon are much less than SHA-256 in ZKPs.
+
 #### Merkle Trees
 
 A Merkle tree is a core component of blockchain and cryptography. It's a binary tree filled with cryptographic hashes. This structure enables efficient and secure verification of the contents of large data structures. To understand more about Merkle trees, read the following:

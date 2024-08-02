@@ -263,8 +263,11 @@ The key difference between the two is the number of keys used: symmetric encrypt
 **🤔 Consider the following:**
 1. What is the primary difference between symmetric and asymmetric encryption?
 2. Can you briefly explain how AES (Advanced Encryption Standard) works?
-3. What makes RSA a popular choice for public-key encryption? 
-:::
+3. What makes RSA a popular choice for public-key encryption? :::
+
+<span style="color:red">
+Text content
+</span>
 
 ### Hash Functions, Merkle Trees
 

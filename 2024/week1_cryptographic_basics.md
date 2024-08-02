@@ -345,6 +345,10 @@ Start your exploration of digital signatures with this intuitive video:
 2. Explain the workings of the Digital Signature Algorithm (DSA).
 :::
 
+**Ans:**
+1. Digital signatures are like real-world signatures in the computer field. We can use it to check the identification and verification.
+2. Alice has plaintext C and private key SK, Alice sends C and e(H(C)) to Bob, Bob can hash C get H(C), and decrypt e(H(C)) to check if H(C) matching.
+
 ### DLP-based Public-Key Cryptography (DLP, DH, Elgamal)
 
 While RSA encryption is based on the hardness of factoring problem, there is another public key cryptography system based on hardness of Discrete Logarithm Problem (DLP).

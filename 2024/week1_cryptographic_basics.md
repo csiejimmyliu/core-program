@@ -265,9 +265,12 @@ The key difference between the two is the number of keys used: symmetric encrypt
 2. Can you briefly explain how AES (Advanced Encryption Standard) works?
 3. What makes RSA a popular choice for public-key encryption? :::
 
-<font color=#0000FF>
-深藍色
-</font>
+**Ans:**
+1. Symmetric algorithm requires two sender and receiver sharing the same key, thus needing to do secret key exchange at first.
+Asymmetric algorithm has public key and secret key, public key is published online, these two keys can decrypt messages encrypted by each other.
+2. AES cuts the message into bytes, fills these bytes in a 4X4 array, each round will (adding round key, substitution, shifting row and mixing column).
+3. Easy to implement and use for both encryption and digital signatures.
+
 
 ### Hash Functions, Merkle Trees
 

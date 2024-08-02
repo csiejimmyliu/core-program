@@ -316,6 +316,11 @@ A Merkle tree is a core component of blockchain and cryptography. It's a binary 
 3. Why are Merkle trees useful for efficient and secure verification of large data structures?
 :::
 
+**Ans:**
+1. Merkle tree is a binary tree, each node of the Merkle tree is a hash value, and the father node is the hash value of two children.
+2. We use Merkle tree to verify transitions, also using Merkle proof as ZKP.
+3. We verify a proof by checking the path to the root, which only needs O(logn) complexity.
+
 ### Digital Signatures (Schnorr)
 
 Digital signatures ensure the integrity and authenticity of digital messages or documents. By providing a means to verify the origin and confirm that the content has not been altered, digital signatures play a pivotal role in maintaining trust in digital communications.

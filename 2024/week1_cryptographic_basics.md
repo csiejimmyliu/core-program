@@ -454,3 +454,13 @@ If you would like to know more about it, you can check out the following resourc
 4. **Merkle Trees**: Explain how Merkle trees can help verify data in a large database efficiently.
 5. **Cryptographic Commitments**: How can Pedersen Commitments be used in a blockchain protocol to maintain transaction privacy?
 6. **Digital Signatures**: How can you verify the authenticity of a digitally signed document?
+
+# Ans
+
+1. Symmetric encryption only has one key, asymmetric encryption has a public key and private key for each user.
+Symmetric encryption can be used for large data exchange, asymmetric encryption can be used in DSA.
+2. DH can share a secret key without leakage.
+3. There one-way function and low collision. Poseidon needs fewer circuits in ZKP.
+4. Only need to verify the path to the root, take O(logn).
+5. It has hiding and binding characteristics. And it can accumulate commitment.
+6. Hashing the plaintext C and decrypt the encrypted digest, check if these two are the same.

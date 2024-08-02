@@ -265,9 +265,9 @@ The key difference between the two is the number of keys used: symmetric encrypt
 2. Can you briefly explain how AES (Advanced Encryption Standard) works?
 3. What makes RSA a popular choice for public-key encryption? :::
 
-<span style="color:red">
-Text content
-</span>
+<font color=#0000FF>
+深藍色
+</font>
 
 ### Hash Functions, Merkle Trees
 

@@ -347,7 +347,7 @@ Start your exploration of digital signatures with this intuitive video:
 
 **Ans:**
 1. Digital signatures are like real-world signatures in the computer field. We can use it to check the identification and verification.
-2. Alice has plaintext C and private key SK, Alice sends C and e(H(C)) to Bob, Bob can hash C get H(C), and decrypt e(H(C)) to check if H(C) matching.
+2. Alice has plaintext C and private key SK, Alice sends C and e(H(C)) to Bob, Bob can hash C get H(C), and decrypt e(H(C)) to check if H(C) matches.
 
 ### DLP-based Public-Key Cryptography (DLP, DH, Elgamal)
 
@@ -377,6 +377,12 @@ While RSA encryption is based on the hardness of factoring problem, there is ano
 3. What is the main idea behind ElGamal encryption?
 4. Can you name a drawback of using DLP-based systems?
 :::
+
+**Ans:**
+1. Assuming A=g^a mod p, DLP is the problem that is so hard to recover a by knowing A.
+2. Alice and Bob share generator g and prime p. They have private keys a and b on their own. Alice sends A=g^a mod p to Bob and Bob sends B=g^b mod p to Alice. Alice now has B^a and Bob has A^b which are the same(g^ab mod p), this is a shared secret key.
+3. With a private key receiver can decrypt a message by eliminating the random number the sender chooses.
+4. square calculation is computationally consuming.
 
 ### Cryptographic Commitments
 

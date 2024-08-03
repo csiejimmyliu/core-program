@@ -413,6 +413,12 @@ As a final touch on this section, [this video [10:32]](https://www.youtube.com/w
 4. Why are Cryptographic Commitments important in blockchain technology?
 :::
 
+**Ans:**
+1. Commitment is like a sealed envelope, we can reveal the message later.
+2. It hides the coefficients and reveals where a polynomial evaluates to a certain value at a specific point.
+3. It has hiding and binding properties while also being able to accumulate commitment.
+4. Ensuring data integrity, and privacy, and enabling to verify. 
+
 ### Intro to Elliptic Curve Cryptography
 
 Elliptic curve cryptography builds upon traditional cryptographic principles by applying them to the mathematical structure of elliptic curves.
